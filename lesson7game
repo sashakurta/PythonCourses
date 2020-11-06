@@ -1,0 +1,81 @@
+from random import choice
+GALLOW_STEP_LIST = [
+        """
+        +---+
+            |
+            |
+            |
+           ===
+        """,
+        """
+        +---+
+        0   |
+            |
+            |
+           ===""",
+        """
+        +---+
+        0   |
+        |   |
+            |
+           ===""",
+        """
+        +---+
+        0   |
+        |\  |
+            |
+           ===""",
+        """
+        +---+
+        0   |
+       /|\  |
+            |
+           ===""",
+        """
+        +---+
+        0   |
+       /|\  |
+         \  |
+           ===""",
+        """
+        +---+
+        0   |
+       /|\  |
+       / \  |
+           ===""",
+]
+
+WORDS = ['python', 'dog', 'book', 'cat', 'house']
+def generate_secret():
+    """Метод которий генерирует случайное слово"""
+    return choice(WORDS)
+
+
+def show_progress(missed_letters, correct_letters, secret_word):
+    pass
+
+def get_guess(alredy_guessd):
+    pass
+
+
+
+
+
+
+
+
+
+
+
+print("В И С Е Л И Ц А")
+missed_letters = []
+correct_letters = []
+secret_word = generate_secret()
+game_is_done = False
+
+while True:
+    show_progress(missed_letters, correct_letters, secret_word)
+    guess = get_guess(missed_letters + correct_letters)
+    
+
+
